@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1657013881676-f375a031a421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main {
+  margin: 20px 0;
+  background-color: hsla(252, 33%, 94%, 0.2);
+  padding: 20px;
+  color: #f8f8f8;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(223, 151, 18, 0.2);
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #f8f8f8;
+  margin-bottom: 15px;
+  padding: 20px;
+  font-size: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  flex-direction: row;
+  transition: all 0.15s;
+  width: 30%;
+  height: 36px;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+form.explode {
+  transform: scale(1.4);
+  opacity: 0;
+}
+
+.icon-container {
+  margin-left: 10px;
+}
+
+#randomIcon {
+  margin-left: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  vertical-align: text-bottom;
+  font-size: 42px;
+  color: #f8f8f8;
+}
+
+.wikiTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.wikiTitle > a {
+  color: #f8f8f8;
+}
+
+p {
+  color: #f8f8f8;
+  font-size: 20px !important;
+}
+
+input {
+  width: 100%;
+  background: none;
+  border: 3px solid #f8f8f8;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 2px 20px;
+  font-size: 30px;
+  color: #f8f8f8;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: -10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+  form {
+    flex-direction: row;
+    transition: all 0.15s;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .wikiDescription {
+    font-size: 14px !important;
+  }
+}
